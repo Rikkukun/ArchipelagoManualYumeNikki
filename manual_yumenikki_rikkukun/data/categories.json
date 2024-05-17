@@ -1,0 +1,35 @@
+{
+    "Effects": {
+        "hidden": false
+    },
+    "Nexus Door Keys": {
+        "yaml_option": ["lock_nexus_doors"],
+        "hidden": false
+    },
+    "Events": {
+        "yaml_option": ["eventsanity"],
+        "hidden": false
+    },
+    "RNG Events": {
+        "yaml_option": ["event_rngchance_sanity"],
+        "hidden": true
+    },
+	"Vending Machines": {
+	    "yaml_option": ["vending_machines_sanity"],
+        "hidden": false,
+	    "requires": "|Knife|"
+	},
+	"Split Frogs": {
+	    "yaml_option": ["separate_frogs"],
+        "hidden": true
+	},
+	"Single Frog": {
+	    "yaml_option": ["!separate_frogs"],
+        "hidden": true
+	},
+	"NPC Kill": {
+	    "yaml_option": ["knifesanity"],
+        "hidden": true,
+	    "requires": "|Knife|"
+	}
+}

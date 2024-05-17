@@ -1,0 +1,161 @@
+﻿# Q. What is this file?
+# A. This file contains options which allow you to configure your multiworld experience while allowing
+#    others to play how they want as well.
+#
+# Q. How do I use it?
+# A. The options in this file are weighted. This means the higher number you assign to a value, the
+#    more chances you have for that option to be chosen. For example, an option like this:
+#
+#    map_shuffle:
+#      on: 5
+#      off: 15
+#
+#    Means you have 5 chances for map shuffle to occur, and 15 chances for map shuffle to be turned
+#    off.
+#
+# Q. I've never seen a file like this before. What characters am I allowed to use?
+# A. This is a .yaml file. You are allowed to use most characters.
+#    To test if your yaml is valid or not, you can use this website:
+#        http://www.yamllint.com/
+#    You can also verify that your Archipelago options are valid at this site:
+#        https://archipelago.gg/check
+
+# Your name in-game, limited to 16 characters.
+#     {player} will be replaced with the player's slot number.
+#     {PLAYER} will be replaced with the player's slot number, if that slot number is greater than 1.
+#     {number} will be replaced with the counter value of the name.
+#     {NUMBER} will be replaced with the counter value of the name, if the counter value is greater than 1.
+name: Player{number}
+
+# Used to describe your yaml. Useful if you have multiple files.
+description: Default Manual_YumeNikki_Rikkukun Template
+
+game: Manual_YumeNikki_Rikkukun
+requires:
+  version: 0.4.6 # Version of Archipelago required for this yaml to work as expected.
+
+Manual_YumeNikki_Rikkukun:
+  progression_balancing:
+    # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
+    # A lower setting means more getting stuck. A higher setting means less getting stuck.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 99
+    random: 0
+    random-low: 0
+    random-high: 0
+    disabled: 0 # equivalent to 0
+    normal: 50 # equivalent to 50
+    extreme: 0 # equivalent to 99
+
+  accessibility:
+    # Set rules for reachability of your items/locations.
+    # Locations: ensure everything can be reached and acquired.
+    # Items: ensure all logically relevant items can be acquired.
+    # Minimal: ensure what is needed to reach your goal can be acquired.
+    locations: 0
+    items: 50
+    minimal: 0
+
+  local_items:
+    # Forces these items to be in their native world.
+    []
+
+  non_local_items:
+    # Forces these items to be outside their native world.
+    []
+
+  start_inventory:
+    # Start with these items.
+    {}
+
+  start_hints:
+    # Start with these item's locations prefilled into the !hint command.
+    []
+
+  start_location_hints:
+    # Start with these locations and their item prefilled into the !hint command
+    []
+
+  exclude_locations:
+    # Prevent these locations from having an important item
+    []
+
+  priority_locations:
+    # Prevent these locations from having an unimportant item
+    []
+
+  item_links:
+    # Share part of your item pool with other players.
+    []
+
+  logic_difficulty:
+    # Yume Nikki has a huge map and some entrances which, by a gameplay standpoint, are questionable at best
+    # The logic selection is here to grant players a choice to prevent some unfun map traversal which would be in logic in almost every seed otherwise, and also buff the Nexus Keys items
+    # In Easy logic you are only expected to reach Stairway of Hands after having access to all five beds in the dream world (Madotsuki Room, Snow World, Block World, Candle World and Number World);
+    # In Easy logic you are not expected to traverse Hell/Red Maze to reach Forest, Eyeball, Neon and Candle World, even if you could,
+    # you are still expected to reach Docks and Witch Island through Hell though since it's the only route;
+    # In Easy logic the Lamp effect is required in all the dark rooms;
+    # In Mean logic all these preventions are ignored
+    # No Logic ignores all logic and seeds could easily be unbeatable. Don't know why you would play this in Archipelago but it's available
+    easy: 50
+    mean: 0
+    no_logic: 0
+
+  lock_nexus_doors:
+    # The doors in the Nexus have been locked!
+    # Find the respective Keys to access the worlds. You always start with a random Nexus Key
+    false: 0
+    true: 50
+
+  custom_effect_requirements:
+    # Gives custom logic requirements to certain Effects that otherwise don't have any utility:
+    # - Towel is required to access the Stairway of Hands by interacting with the beds in the dream world (Towel resembles a bed sheet)
+    # - Frog is required to access Pink Sea (Based on the Frog's property of giving 2x speed in water)
+    # - Demon is required to use the shortcut from FC World to FC House by talking to RNG Demon (100% chance to spawn with Demon equipped)
+    # - Flute is required to get an item from Masada by playing next to him
+    false: 50
+    true: 0
+
+  eventsanity:
+    # You get items from seeing certain events in Yume Nikki
+    # Events which require RNG are excluded
+    # NOTE: You have to turn this on to make the option Lock Nexus Doors work (otherwise there won't be enough available locations to place Nexus Keys)
+    false: 0
+    true: 50
+
+  event_rngchance_sanity:
+    # You get items from seeing certain events which require lucky RNG (Uboa, FACE, Falling Man, Takofuusen)
+    # Activate this at your own risk
+    false: 50
+    true: 0
+
+  vending_machines_sanity:
+    # You get an item for making a purchase at the three Vending Machines
+    # Knife is expected in logic in order to obtain money
+    false: 50
+    true: 0
+
+  separate_frogs:
+    # There are two locations where you can obtain the Frog effect: Forest World and Dense Woods
+    # No: you obtain a single item from any of the two locations
+    # Yes: you obtain an item from each of the two locations
+    false: 0
+    true: 50
+
+  knifesanity:
+    # NOT YET IMPLEMENTED
+    false: 50
+    true: 0
+
+  filler_traps:
+    # How many fillers will be replaced with traps. 0 means no additional traps, 100 means all fillers are traps.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0

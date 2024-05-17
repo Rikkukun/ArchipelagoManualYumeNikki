@@ -1,0 +1,13 @@
+{
+	"game": "YumeNikki",
+	"creator": "Rikkukun",
+	"filler_item_name": "100 Yen",
+	"trap_item_name": "Cheek Pinch Trap",
+	"starting_items":
+	[
+		{
+			"item_categories": ["Nexus Door Keys"],
+			"random": 1
+		}
+	]
+}

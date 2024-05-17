@@ -1,0 +1,165 @@
+{
+	"Nexus": 	{
+		"starting": true,
+		"connects_to": ["Nexus to Forest World Connector","Nexus to Eyeball World Connector","Nexus to Shield-Folk World Connector","Nexus to Neon World Connector","Nexus to Candle World Connector","Numbers World","Nexus to Graffiti World Connector","Nexus to Mural World Connector","Snow World","Nexus to Dark World Connector","Puddle World","Nexus to Block World Connector","Stairway of Hands"],
+		"requires": []
+	},
+	
+	"Snow World": 	{
+		"connects_to": ["Pink Sea"],
+		"requires": "{OptOne(Snow World Key)}"
+	},
+	"Pink Sea": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	
+	"Numbers World": 	{
+		"connects_to": ["KyuuKyuu-kun Stairway"],
+		"requires": "{OptOne(Number World Key)}"
+	},
+	"KyuuKyuu-kun Stairway": 	{
+		"connects_to": [],
+		"requires": "|Knife|"
+	},
+
+	"Nexus to Forest World Connector": 	{
+		"connects_to": ["Forest World"],
+		"requires": "{OptOne(Forest World Key)}"
+	},
+	"Forest World": 	{
+		"connects_to": ["Hell"],
+		"requires": []
+	},
+	
+	"Nexus to Eyeball World Connector": 	{
+		"connects_to": ["Eyeball World"],
+		"requires": "{OptOne(Eyeball World Key)}"
+	},
+	"Eyeball World": 	{
+		"connects_to": ["Hell"],
+		"requires": []
+	},
+	
+	"Nexus to Neon World Connector": 	{
+		"connects_to": ["Neon World"],
+		"requires": "{OptOne(Neon World Key)}"
+	},
+	"Neon World": 	{
+		"connects_to": ["Hell"],
+		"requires": []
+	},
+	
+	"Nexus to Candle World Connector": 	{
+		"connects_to": ["Candle World"],
+		"requires": "{OptOne(Candle World Key)}"
+	},
+	"Candle World": 	{
+		"connects_to": ["Hell"],
+		"requires": []
+	},
+	
+	"Nexus to Shield-Folk World Connector": 	{
+		"connects_to": ["Shield-Folk World"],
+		"requires": "{OptOne(Shield-Folk World Key)}"
+	},
+	"Shield-Folk World": 	{
+		"connects_to": [],
+		"requires": []
+	},
+
+	"Nexus to Block World Connector": 	{
+		"connects_to": ["Block World"],
+		"requires": "{OptOne(Block World Key)}"
+	},
+	"Block World": 	{
+		"connects_to": ["White Desert A"],
+		"requires": []
+	},
+	
+	"Nexus to Mural World Connector": 	{
+		"connects_to": ["Mural World"],
+		"requires": "{OptOne(Mural World Key)}"
+	},
+	"Mural World": 	{
+		"connects_to": ["Block World"],
+		"requires": []
+	},
+	
+	"Nexus to Dark World Connector": 	{
+		"connects_to": ["Dark World"],
+		"requires": "{OptOne(Dark World Key)}"
+	},
+	"Dark World": 	{
+		"connects_to": ["Wilderness"],
+		"requires": []
+	},
+	
+	"Puddle World": 	{
+		"connects_to": [],
+		"requires": "{OptOne(Puddle World Key)}"
+	},
+
+	"Nexus to Graffiti World Connector": 	{
+		"connects_to": ["Graffiti World"],
+		"requires": "{OptOne(Graffiti World Key)}"
+	},
+	"Graffiti World": 	{
+		"connects_to": ["Mall"],
+		"requires": []
+	},
+	"Mall": 	{
+		"connects_to": ["Graffiti World","White Desert B"],
+		"requires": []
+	},
+	"Stairway of Hands": 	{
+		"connects_to": ["Underground World","Mall"],
+		"requires": ""
+	},
+	"Underground World": 	{
+		"connects_to": ["Spaceship"],
+		"requires": "|Umbrella| OR |Yuki Onna|"
+	},
+	"Hell": 	{
+		"connects_to": ["Witch Island","Wilderness","Hell to Worlds Connector"],
+		"requires": []
+	},
+	"Hell to Worlds Connector": 	{
+		"connects_to": ["Forest World","Eyeball World","Neon World","Candle World"],
+		"requires": []
+	},
+	"Witch Island": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	
+	"FC World B": 	{
+		"connects_to": ["FC World to FC House Connector"],
+		"requires": []
+	},
+	"FC World to FC House Connector": 	{
+		"connects_to": ["Shield-Folk World"],
+		"requires": []
+	},
+	"Spaceship": 	{
+		"connects_to": ["Mars"],
+		"requires": []
+	},
+	"Mars": 	{
+		"connects_to": [],
+		"requires": "|Midget|"
+	},
+	"Wilderness": 	{
+		"connects_to": ["FC World B","Dark World","Mural World"],
+		"requires": []
+	},
+	"White Desert A": 	{
+		"connects_to": ["Block World"],
+		"requires": []
+	},
+	"White Desert B": 	{
+		"connects_to": ["White Desert A"],
+		"requires": []
+	}
+	
+}

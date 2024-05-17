@@ -1,0 +1,292 @@
+[
+	{
+		"name": "Umbrella",
+		"region": "Puddle World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Hat and Scarf",
+		"region": "Block World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Yuki Onna",
+		"region": "Snow World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Knife",
+		"region": "Dark World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Medamaude",
+		"region": "Eyeball World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Fat",
+		"region": "Hell",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Midget",
+		"region": "Candle World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Flute",
+		"region": "Mall",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Neon",
+		"region": "Neon World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Nopperabou",
+		"region": "Mural World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Severed Head",
+		"region": "Numbers World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Towel",
+		"region": "Wilderness",
+		"category": ["Effects"],
+		"requires": "|Lamp|"
+	},
+	{
+		"name": "Cat",
+		"region": "Shield-Folk World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Lamp",
+		"region": "Numbers World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Bicycle",
+		"region": "Graffiti World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Long Hair",
+		"region": "Mural World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Blonde Hair",
+		"region": "Mural World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Poop Hair",
+		"region": "Underground World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Triangle Kerchief",
+		"region": "Wilderness",
+		"category": ["Effects"],
+		"requires": "|Lamp|"
+	},
+	{
+		"name": "Witch",
+		"region": "Witch Island",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Demon",
+		"region": "Shield-Folk World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Buyo Buyo",
+		"region": "FC World B",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Stoplight",
+		"region": "Puddle World",
+		"category": ["Effects"],
+		"requires": []
+	},
+	{
+		"name": "Frog",
+		"region": "Nexus",
+		"category": ["Effects","Single Frog"],
+		"requires": "{OptOne(Forest World Key)} OR (|Towel| OR {OptOne(Graffiti World Key)})"
+	},
+	{
+		"name": "Dense Woods Frog",
+		"region": "Mall",
+		"category": ["Effects","Split Frogs"],
+		"requires": []
+	},
+	{
+		"name": "Forest World Frog",
+		"region": "Forest World",
+		"category": ["Effects","Split Frogs"],
+		"requires": []
+	},
+	{
+		"name": "Ending",
+		"victory": true,
+		"region": "Nexus",
+		"category": ["Goal"],
+		"requires": "|Frog| AND |Umbrella| AND |Hat and Scarf| AND |Yuki Onna| AND |Knife| AND |Medamaude| AND |Fat| AND |Midget| AND |Flute| AND |Neon| AND |Nopperabou| AND |Severed Head| AND |Towel| AND |Cat| AND |Lamp| AND |Bicycle| AND |Long Hair| AND |Poop Hair| AND |Blonde Hair| AND |Triangle Kerchief| AND |Witch| AND |Demon| AND |Buyo Buyo| AND |Stoplight|"
+	},
+	{
+		"name": "Melting Madotsuki",
+		"region": "Stairway of Hands",
+		"category": ["Events"],
+		"requires": "|Hat and Scarf| AND {OptOne(Snow World Key)}"
+	},
+	{
+		"name": "Toriningen Party",
+		"region": "Wilderness",
+		"category": ["Events"],
+		"requires": []
+	},
+	{
+		"name": "Uboa",
+		"region": "Snow World",
+		"category": ["Events","RNG Events"],
+		"requires": []
+	},
+	{
+		"name": "Witch's Flight",
+		"region": "Stairway of Hands",
+		"category": ["Events"],
+		"requires": "|Witch|"
+	},
+	{
+		"name": "Rave Aztec Monkey",
+		"region": "Wilderness",
+		"category": ["Events"],
+		"requires": []
+	},
+	{
+		"name": "FACE",
+		"region": "KyuuKyuu-kun Stairway",
+		"category": ["Events","RNG Events"],
+		"requires": []
+	},
+	{
+		"name": "Severed Heads in the Sky",
+		"region": "White Desert A",
+		"category": ["Events"],
+		"requires": "|Knife|"
+	},
+	{
+		"name": "Monoe",
+		"region": "White Desert A",
+		"category": ["Events"],
+		"requires": "|Knife|"
+	},
+	{
+		"name": "Monoko",
+		"region": "White Desert A",
+		"category": ["Events"],
+		"requires": "|Stoplight|"
+	},
+	{
+		"name": "Play with Masada",
+		"region": "Spaceship",
+		"category": ["Events"],
+		"requires": []
+	},
+	{
+		"name": "UFO",
+		"region": "Spaceship",
+		"category": ["Events"],
+		"requires": "|Cat|"
+	},
+	{
+		"name": "Mars-san",
+		"region": "Mars",
+		"category": ["Events"],
+		"requires": []
+	},
+	{
+		"name": "Closet Madotsuki",
+		"region": "Numbers World",
+		"category": ["Events"],
+		"requires": []
+	},
+	{
+		"name": "Takofuusen",
+		"region": "White Desert A",
+		"category": ["Events","RNG Events"],
+		"requires": []
+	},
+	{
+		"name": "Falling Man",
+		"region": "Wilderness",
+		"category": ["Events","RNG Events"],
+		"requires": []
+	},
+	{
+		"name": "Famicom Glitch",
+		"region": "White Desert B",
+		"category": ["Events","RNG Events"],
+		"requires": []
+	},
+	{
+		"name": "Dense Woods Vending Machine",
+		"region": "Puddle World",
+		"category": ["Vending Machines"],
+		"requires": "|Knife|"
+	},
+	{
+		"name": "Hell Vending Machine",
+		"region": "Hell",
+		"category": ["Vending Machines"],
+		"requires": "|Knife|"
+	},
+	{
+		"name": "Docks Vending Machine",
+		"region": "Mural World",
+		"category": ["Vending Machines"],
+		"requires": "|Knife|"
+	},
+
+	{
+		"name": "Poniko",
+		"region": "Snow World",
+		"category": ["NPC Kill"],
+		"requires": []
+	},
+	{
+		"name": "Masada",
+		"region": "Spaceship",
+		"category": ["NPC Kill"],
+		"requires": []
+	}
+]

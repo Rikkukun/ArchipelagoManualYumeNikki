@@ -1,0 +1,224 @@
+[
+	{
+		"count":1,
+		"name": "Frog",
+		"category": ["Effects"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Umbrella",
+		"category": ["Effects"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Hat and Scarf",
+		"category": ["Effects"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Yuki Onna",
+		"category": ["Effects"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Knife",
+		"category": ["Effects"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Medamaude",
+		"category": ["Effects"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Fat",
+		"category": ["Effects"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Midget",
+		"category": ["Effects"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Flute",
+		"category": ["Effects"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Neon",
+		"category": ["Effects"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Nopperabou",
+		"category": ["Effects"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Severed Head",
+		"category": ["Effects"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Towel",
+		"category": ["Effects"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cat",
+		"category": ["Effects"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Lamp",
+		"category": ["Effects"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Bicycle",
+		"category": ["Effects"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Long Hair",
+		"category": ["Effects"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Poop Hair",
+		"category": ["Effects"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Blonde Hair",
+		"category": ["Effects"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Triangle Kerchief",
+		"category": ["Effects"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Witch",
+		"category": ["Effects"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Demon",
+		"category": ["Effects"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Buyo Buyo",
+		"category": ["Effects"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Stoplight",
+		"category": ["Effects"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Instructions",
+		"category": ["Effects"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Number World Key",
+		"category": ["Nexus Door Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Neon World Key",
+		"category": ["Nexus Door Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Shield-Folk World Key",
+		"category": ["Nexus Door Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Candle World Key",
+		"category": ["Nexus Door Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Eyeball World Key",
+		"category": ["Nexus Door Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Graffiti World Key",
+		"category": ["Nexus Door Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Mural World Key",
+		"category": ["Nexus Door Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Snow World Key",
+		"category": ["Nexus Door Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Dark World Key",
+		"category": ["Nexus Door Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Puddle World Key",
+		"category": ["Nexus Door Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Block World Key",
+		"category": ["Nexus Door Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Forest World Key",
+		"category": ["Nexus Door Keys"],
+		"progression": true
+	}
+]
