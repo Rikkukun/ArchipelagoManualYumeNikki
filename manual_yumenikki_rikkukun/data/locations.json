@@ -275,18 +275,5 @@
 		"region": "Mural World",
 		"category": ["Vending Machines"],
 		"requires": "|Knife|"
-	},
-
-	{
-		"name": "Poniko",
-		"region": "Snow World",
-		"category": ["NPC Kill"],
-		"requires": []
-	},
-	{
-		"name": "Masada",
-		"region": "Spaceship",
-		"category": ["NPC Kill"],
-		"requires": []
 	}
 ]

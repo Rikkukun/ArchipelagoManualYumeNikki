@@ -1,6 +1,7 @@
 # Object classes from AP core, to represent an entire MultiWorld and this individual World that's part of it
 from worlds.AutoWorld import World
 from worlds.generic.Rules import add_rule
+from worlds.generic.Rules import set_rule
 from BaseClasses import MultiWorld, CollectionState
 
 # Object classes from Manual -- extending AP core -- representing items and locations that are used in generation
@@ -111,7 +112,7 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
             match location.name:
                 case "Play with Masada":
                     # add_rule(location, "Flute")
-                    add_rule(location, lambda state: state.has("Flute", player))
+                    set_rule(location, lambda state: state.has("Flute", player))
                     
     if logic_difficulty == "option_easy":
         for region in multiworld.get_regions(player):
@@ -131,9 +132,9 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     if logic_difficulty == "option_no_logic":
         for region in multiworld.get_regions(player):
             for entrance in region.entrances:
-                add_rule(entrance, lambda state: true)
+                set_rule(entrance, lambda state: true)
         for location in multiworld.get_locations(player):
-            add_rule(location, lambda state: true)
+            set_rule(location, lambda state: true)
 
     def Example_Rule(state: CollectionState) -> bool:
         # Calculated rules take a CollectionState object and return a boolean
