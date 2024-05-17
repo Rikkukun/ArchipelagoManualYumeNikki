@@ -96,9 +96,11 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to modify the access rules for a given location
     
     custom_effect_requirements = get_option_value(multiworld, player, "custom_effect_requirements")
+    lock_nexus_doors = get_option_value(multiworld, player, "lock_nexus_doors")
     logic_difficulty = get_option_value(multiworld, player, "logic_difficulty")
     
-    if custom_effect_requirements and logic_difficulty != "option_no_logic":
+    # Custom Effect Requirements
+    if custom_effect_requirements and logic_difficulty != 2:
         for region in multiworld.get_regions(player):
             match region.name:
                 case "Pink Sea":
@@ -113,12 +115,13 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                 case "Play with Masada":
                     # add_rule(location, "Flute")
                     set_rule(location, lambda state: state.has("Flute", player))
-                    
-    if logic_difficulty == "option_easy":
+    
+    # Easy Logic
+    if logic_difficulty == 0:
         for region in multiworld.get_regions(player):
             match region.name:
                 case "Hell to Worlds Connector":
-                    add_region_rule(region, false, player)
+                    add_region_rule(region, False, player)
                 case "Dark World":
                     add_region_rule(region, "Lamp", player)
                 case "Witch Island":
@@ -126,15 +129,19 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                 case "White Desert B":
                     add_region_rule(region, "Lamp", player)
                 case "Stairway of Hands":
-                    old_rule = region.access_rule
-                    region.access_rule = lambda state: old_rule(state) and state.has("{OptOne(Snow World Key)}", world.player) and state.has("{OptOne(Number World Key)}", world.player) and state.has("{OptOne(Candle World Key)}", world.player) and state.has("{OptOne(Block World Key)}", world.player)
+                    if lock_nexus_doors:
+                        add_region_rule(region, "Block World Key", player)
+                        add_region_rule(region, "Number World Key", player)
+                        add_region_rule(region, "Candle World Key", player)
+                        add_region_rule(region, "Block World Key", player)
 
-    if logic_difficulty == "option_no_logic":
+    # No Logic
+    if logic_difficulty == 2:
         for region in multiworld.get_regions(player):
             for entrance in region.entrances:
-                set_rule(entrance, lambda state: true)
+                set_rule(entrance, lambda state: True)
         for location in multiworld.get_locations(player):
-            set_rule(location, lambda state: true)
+            set_rule(location, lambda state: True)
 
     def Example_Rule(state: CollectionState) -> bool:
         # Calculated rules take a CollectionState object and return a boolean

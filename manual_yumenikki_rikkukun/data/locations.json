@@ -69,7 +69,7 @@
 		"name": "Towel",
 		"region": "Wilderness",
 		"category": ["Effects"],
-		"requires": "|Lamp|"
+		"requires": []
 	},
 	{
 		"name": "Cat",
@@ -111,7 +111,7 @@
 		"name": "Triangle Kerchief",
 		"region": "Wilderness",
 		"category": ["Effects"],
-		"requires": "|Lamp|"
+		"requires": []
 	},
 	{
 		"name": "Witch",
@@ -141,7 +141,7 @@
 		"name": "Frog",
 		"region": "Nexus",
 		"category": ["Effects","Single Frog"],
-		"requires": "{OptOne(Forest World Key)} OR (|Towel| OR {OptOne(Graffiti World Key)})"
+		"requires": "{OptOne(Forest World Key)} OR {OptOne(Graffiti World Key)}"
 	},
 	{
 		"name": "Dense Woods Frog",
