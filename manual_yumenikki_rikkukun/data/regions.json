@@ -132,7 +132,6 @@
 		"connects_to": [],
 		"requires": []
 	},
-	
 	"FC World B": 	{
 		"connects_to": ["FC World to FC House Connector"],
 		"requires": []

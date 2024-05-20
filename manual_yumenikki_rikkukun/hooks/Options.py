@@ -26,15 +26,25 @@ from ..Helpers import is_option_enabled, get_option_value
 # To add an option, use the before_options_defined hook below and something like this:
 #   options["total_characters_to_win_with"] = TotalCharactersToWinWith
 #
+
+class EffectsForEnding(Range):
+    """How many Effects do you need to obtain to see the Ending
+    - 24: same as in the original game
+    - 0: you can reach the Ending as soon as you start the seed"""
+    display_name = "Effects Required For Ending"
+    range_start = 0
+    range_end = 24
+    default = 24
+
 class LogicDifficulty(Choice):
     """Yume Nikki has a huge map and some entrances which, by a gameplay standpoint, are questionable at best
     The logic selection is here to grant players a choice to prevent some unfun map traversal which would be in logic in almost every seed otherwise, and also buff the Nexus Keys items
-    In Easy logic you are only expected to reach Stairway of Hands after having access to all five beds in the dream world (Madotsuki Room, Snow World, Block World, Candle World and Number World);
-    In Easy logic you are not expected to traverse Hell/Red Maze to reach Forest, Eyeball, Neon and Candle World, even if you could,
-    you are still expected to reach Docks and Witch Island through Hell though since it's the only route;
-    In Easy logic the Lamp effect is required in all the dark rooms;
-    In Mean logic all these preventions are ignored
-    No Logic ignores all logic and seeds could easily be unbeatable. Don't know why you would play this in Archipelago but it's available"""
+    In Easy logic:
+    - You are only expected to reach Stairway of Hands after having access to all five beds in the dream world (Madotsuki Room, Snow World, Block World, Candle World and Number World)
+    - You are not expected to traverse Hell/Red Maze to reach Forest, Eyeball, Neon and Candle World. You are still expected to reach Docks and Witch Island through Hell though since it's the only way
+    - Lamp effect is required in all the dark rooms
+    In Mean logic all the above preventions are ignored
+    No Logic ignores all logic and therefore seeds could easily result in unbeatable seeds. Don't know why you would play this in Archipelago but it's available"""
     display_name = "Logic Difficulty"
     option_easy = 0
     option_mean = 1
@@ -46,28 +56,36 @@ class LockNexusDoors(DefaultOnToggle):
     Find the respective Keys to access the worlds. You always start with a random Nexus Key"""
     display_name = "Lock Nexus Doors"
     
-class CustomEffects(Toggle):
+class FunEffects(Toggle):
     """Gives custom logic requirements to certain Effects that otherwise don't have any utility:
     - Towel is required to access the Stairway of Hands by interacting with the beds in the dream world (Towel resembles a bed sheet)
     - Frog is required to access Pink Sea (Based on the Frog's property of giving 2x speed in water)
+    - Flute is required to get an item from Masada by playing next to him
     - Demon is required to use the shortcut from FC World to FC House by talking to RNG Demon (100% chance to spawn with Demon equipped)
-    - Flute is required to get an item from Masada by playing next to him"""
-    display_name = "Custom Effects Requirement"
+    - Nopperabou is required to access FC World by interacting with the Pirori in the Ghost Town (Pirori have no face like Nopperabou)
+    - Triangle Kerchief is required to get the item from Ghost Madotsuki
+    - Poop Hair is required to access Restrooms"""
+    display_name = "Fun Effects Mode"
 
 class Eventsanity(DefaultOnToggle):
     """You get items from seeing certain events in Yume Nikki
     Events which require RNG are excluded
-    NOTE: You have to turn this on to make the option Lock Nexus Doors work (otherwise there won't be enough available locations to place Nexus Keys)"""
+    You have to turn this on to make the option Lock Nexus Doors work (otherwise there won't be enough available locations to place Nexus Keys)"""
     display_name = "Eventsanity"
     
 class EventsanityRng(Toggle):
-    """You get items from seeing certain events which require lucky RNG (Uboa, FACE, Falling Man, Takofuusen)
+    """You get items from seeing certain events which require lucky RNG (Uboa, FACE, Falling Man, Takofuusen, FC Glitch, Melting Madotsuki)
     Activate this at your own risk"""
     display_name = "Eventsanity RNG"
     
-class VendingMachineSanity(Toggle):
+class ShuffleVendingMachines(Toggle):
     """You get an item for making a purchase at the three Vending Machines
     Knife is expected in logic in order to obtain money"""
+    display_name = "Vending Machines Sanity"
+
+class ShuffleRestrooms(Toggle):
+    """You get an item from the two Restrooms in Graffiti World and Block World
+    In Fun Effects Mode you need Poop Hair to get these two items"""
     display_name = "Vending Machines Sanity"
     
 class SeparateFrogs(DefaultOnToggle):
@@ -82,12 +100,14 @@ class Knifesanity(Toggle):
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict) -> dict:
+    options["effects_for_ending"] = EffectsForEnding
     options["logic_difficulty"] = LogicDifficulty
     options["lock_nexus_doors"] = LockNexusDoors
-    options["custom_effect_requirements"] = CustomEffects
+    options["fun_effects_mode"] = FunEffects
     options["eventsanity"] = Eventsanity
     options["event_rngchance_sanity"] = EventsanityRng
-    options["vending_machines_sanity"] = VendingMachineSanity
+    options["shuffle_vending_machines"] = ShuffleVendingMachines
+    options["shuffle_restrooms"] = ShuffleRestrooms
     options["separate_frogs"] = SeparateFrogs
     options["knifesanity"] = Knifesanity
     return options

@@ -141,7 +141,7 @@
 		"name": "Frog",
 		"region": "Nexus",
 		"category": ["Effects","Single Frog"],
-		"requires": "{OptOne(Forest World Key)} OR {OptOne(Graffiti World Key)}"
+		"requires": "{OptOne(Forest World Key)} OR {OptOne(Graffiti World Key)} OR (|Towel| AND {OptOne(Snow World Key)} AND {OptOne(Number World Key)} AND {OptOne(Candle World Key)} AND {OptOne(Block World Key)})"
 	},
 	{
 		"name": "Dense Woods Frog",
@@ -160,12 +160,12 @@
 		"victory": true,
 		"region": "Nexus",
 		"category": ["Goal"],
-		"requires": "|Frog| AND |Umbrella| AND |Hat and Scarf| AND |Yuki Onna| AND |Knife| AND |Medamaude| AND |Fat| AND |Midget| AND |Flute| AND |Neon| AND |Nopperabou| AND |Severed Head| AND |Towel| AND |Cat| AND |Lamp| AND |Bicycle| AND |Long Hair| AND |Poop Hair| AND |Blonde Hair| AND |Triangle Kerchief| AND |Witch| AND |Demon| AND |Buyo Buyo| AND |Stoplight|"
+		"requires": "|@Effects Ending:24|"
 	},
 	{
 		"name": "Melting Madotsuki",
 		"region": "Stairway of Hands",
-		"category": ["Events"],
+		"category": ["Events","RNG Events"],
 		"requires": "|Hat and Scarf| AND {OptOne(Snow World Key)}"
 	},
 	{
@@ -201,6 +201,12 @@
 	{
 		"name": "Severed Heads in the Sky",
 		"region": "White Desert A",
+		"category": ["Events"],
+		"requires": "|Knife|"
+	},
+	{
+		"name": "Thing with the Quivering Jaw",
+		"region": "Puddle World",
 		"category": ["Events"],
 		"requires": "|Knife|"
 	},
@@ -241,6 +247,12 @@
 		"requires": []
 	},
 	{
+		"name": "Ghost Madotsuki",
+		"region": "Numbers World",
+		"category": ["Events"],
+		"requires": "|Knife|"
+	},
+	{
 		"name": "Takofuusen",
 		"region": "White Desert A",
 		"category": ["Events","RNG Events"],
@@ -256,6 +268,24 @@
 		"name": "Famicom Glitch",
 		"region": "White Desert B",
 		"category": ["Events","RNG Events"],
+		"requires": []
+	},
+	{
+		"name": "FC Goblins",
+		"region": "Shield-Folk World",
+		"category": ["Events"],
+		"requires": []
+	},
+	{
+		"name": "Block World Restroom",
+		"region": "Block World",
+		"category": ["Restroom"],
+		"requires": []
+	},
+	{
+		"name": "Graffiti World Restroom",
+		"region": "Graffiti World",
+		"category": ["Restroom"],
 		"requires": []
 	},
 	{

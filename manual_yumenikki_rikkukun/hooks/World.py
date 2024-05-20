@@ -95,12 +95,20 @@ def before_set_rules(world: World, multiworld: MultiWorld, player: int):
 def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to modify the access rules for a given location
     
-    custom_effect_requirements = get_option_value(multiworld, player, "custom_effect_requirements")
+    fun_effects_mode = get_option_value(multiworld, player, "fun_effects_mode")
     lock_nexus_doors = get_option_value(multiworld, player, "lock_nexus_doors")
     logic_difficulty = get_option_value(multiworld, player, "logic_difficulty")
+    effects_for_ending = get_option_value(multiworld, player, "effects_for_ending")
+
+    # Number of effects required for Ending
+    if -1 < effects_for_ending < 24:
+        for location in multiworld.get_locations(player):
+            match location.name:
+                case "__Manual Game Complete__":
+                    set_rule(location, lambda state: state.count_group("Effects Ending", player) >= effects_for_ending)
     
-    # Custom Effect Requirements
-    if custom_effect_requirements and logic_difficulty != 2:
+    # Fun Effect Mode: Custom Effect Requirements
+    if fun_effects_mode and logic_difficulty != 2:
         for region in multiworld.get_regions(player):
             match region.name:
                 case "Pink Sea":
@@ -109,12 +117,19 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                     add_region_rule(region, "Towel", player)
                 case "FC World to FC House Connector":
                     add_region_rule(region, "Demon", player)
+                case "FC World B":
+                    add_region_rule(region, "Nopperabou", player)
                     
         for location in multiworld.get_locations(player):
             match location.name:
                 case "Play with Masada":
-                    # add_rule(location, "Flute")
                     set_rule(location, lambda state: state.has("Flute", player))
+                case "Ghost Madotsuki":
+                    set_rule(location, lambda state: state.has("Triangle Kerchief", player))
+                case "Block World Restroom":
+                    set_rule(location, lambda state: state.has("Poop Hair", player))
+                case "Graffiti World Restroom":
+                    set_rule(location, lambda state: state.has("Poop Hair", player))
     
     # Easy Logic
     if logic_difficulty == 0:
@@ -130,7 +145,7 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                     add_region_rule(region, "Lamp", player)
                 case "Stairway of Hands":
                     if lock_nexus_doors:
-                        add_region_rule(region, "Block World Key", player)
+                        add_region_rule(region, "Snow World Key", player)
                         add_region_rule(region, "Number World Key", player)
                         add_region_rule(region, "Candle World Key", player)
                         add_region_rule(region, "Block World Key", player)

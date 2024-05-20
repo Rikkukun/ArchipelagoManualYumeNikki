@@ -2,145 +2,145 @@
 	{
 		"count":1,
 		"name": "Frog",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Umbrella",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Hat and Scarf",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Yuki Onna",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Knife",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Medamaude",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Fat",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression_skip_balancing": true
 	},
 	{
 		"count":1,
 		"name": "Midget",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Flute",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Neon",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression_skip_balancing": true
 	},
 	{
 		"count":1,
 		"name": "Nopperabou",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression_skip_balancing": true
 	},
 	{
 		"count":1,
 		"name": "Severed Head",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression_skip_balancing": true
 	},
 	{
 		"count":1,
 		"name": "Towel",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Cat",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression_skip_balancing": true
 	},
 	{
 		"count":1,
 		"name": "Lamp",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Bicycle",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Long Hair",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression_skip_balancing": true
 	},
 	{
 		"count":1,
 		"name": "Poop Hair",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression_skip_balancing": true
 	},
 	{
 		"count":1,
 		"name": "Blonde Hair",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression_skip_balancing": true
 	},
 	{
 		"count":1,
 		"name": "Triangle Kerchief",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression_skip_balancing": true
 	},
 	{
 		"count":1,
 		"name": "Witch",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Demon",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression_skip_balancing": true
 	},
 	{
 		"count":1,
 		"name": "Buyo Buyo",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression_skip_balancing": true
 	},
 	{
 		"count":1,
 		"name": "Stoplight",
-		"category": ["Effects"],
+		"category": ["Effects","Effects Ending"],
 		"progression": true
 	},
 	{

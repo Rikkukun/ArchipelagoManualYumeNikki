@@ -2,6 +2,9 @@
     "Effects": {
         "hidden": false
     },
+    "Effects Ending": {
+        "hidden": true
+    },
     "Nexus Door Keys": {
         "yaml_option": ["lock_nexus_doors"],
         "hidden": false
@@ -15,9 +18,12 @@
         "hidden": true
     },
 	"Vending Machines": {
-	    "yaml_option": ["vending_machines_sanity"],
-        "hidden": false,
-	    "requires": "|Knife|"
+	    "yaml_option": ["shuffle_vending_machines"],
+        "hidden": false
+	},
+	"Restroom": {
+	    "yaml_option": ["shuffle_restrooms"],
+        "hidden": false
 	},
 	"Split Frogs": {
 	    "yaml_option": ["separate_frogs"],
