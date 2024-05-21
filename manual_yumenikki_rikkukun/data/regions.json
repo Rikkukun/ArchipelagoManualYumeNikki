@@ -20,7 +20,7 @@
 	},
 	"KyuuKyuu-kun Stairway": 	{
 		"connects_to": [],
-		"requires": "|Knife|"
+		"requires": "|@Knife Naming:1|"
 	},
 
 	"Nexus to Forest World Connector": 	{
@@ -118,14 +118,18 @@
 	},
 	"Underground World": 	{
 		"connects_to": ["Spaceship"],
-		"requires": "|Umbrella| OR |Yuki Onna|"
+		"requires": "|Umbrella| OR |@Yuki Onna Naming:1|"
 	},
 	"Hell": 	{
-		"connects_to": ["Witch Island","Wilderness","Hell to Worlds Connector"],
+		"connects_to": ["Witch Island","Hell to Wilderness Connector","Hell to Worlds Connector"],
 		"requires": []
 	},
 	"Hell to Worlds Connector": 	{
 		"connects_to": ["Forest World","Eyeball World","Neon World","Candle World"],
+		"requires": []
+	},
+	"Hell to Wilderness Connector": 	{
+		"connects_to": ["Wilderness"],
 		"requires": []
 	},
 	"Witch Island": 	{

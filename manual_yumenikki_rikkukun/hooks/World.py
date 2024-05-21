@@ -119,13 +119,15 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                     add_region_rule(region, "Demon", player)
                 case "FC World B":
                     add_region_rule(region, "Nopperabou", player)
+                case "Hell to Wilderness Connector":
+                    add_region_rule(region, "Nopperabou", player)
                     
         for location in multiworld.get_locations(player):
             match location.name:
                 case "Play with Masada":
                     set_rule(location, lambda state: state.has("Flute", player))
                 case "Ghost Madotsuki":
-                    set_rule(location, lambda state: state.has("Triangle Kerchief", player))
+                    set_rule(location, lambda state: state.count_group("Triangle Naming", player) == 1)
                 case "Block World Restroom":
                     set_rule(location, lambda state: state.has("Poop Hair", player))
                 case "Graffiti World Restroom":

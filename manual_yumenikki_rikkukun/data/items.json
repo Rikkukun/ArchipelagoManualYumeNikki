@@ -20,25 +20,49 @@
 	{
 		"count":1,
 		"name": "Yuki Onna",
-		"category": ["Effects","Effects Ending"],
+		"category": ["Effects","Effects Ending","Unofficial","Yuki Onna Naming"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Snow Woman",
+		"category": ["Effects","Effects Ending","Official","Yuki Onna Naming"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Knife",
-		"category": ["Effects","Effects Ending"],
+		"category": ["Effects","Effects Ending","Unofficial","Knife Naming"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Kitchen Knife",
+		"category": ["Effects","Effects Ending","Official","Knife Naming"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Medamaude",
-		"category": ["Effects","Effects Ending"],
+		"category": ["Effects","Effects Ending","Unofficial","Medamaude Naming"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Eye Palm",
+		"category": ["Effects","Effects Ending","Official","Medamaude Naming"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Fat",
-		"category": ["Effects","Effects Ending"],
+		"category": ["Effects","Effects Ending","Unofficial","Fat Naming"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Fatten",
+		"category": ["Effects","Effects Ending","Official","Fat Naming"],
 		"progression": true
 	},
 	{
@@ -62,7 +86,13 @@
 	{
 		"count":1,
 		"name": "Nopperabou",
-		"category": ["Effects","Effects Ending"],
+		"category": ["Effects","Effects Ending","Unofficial","Nopperabou Naming"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Faceless Ghost",
+		"category": ["Effects","Effects Ending","Official","Nopperabou Naming"],
 		"progression": true
 	},
 	{
@@ -116,7 +146,13 @@
 	{
 		"count":1,
 		"name": "Triangle Kerchief",
-		"category": ["Effects","Effects Ending"],
+		"category": ["Effects","Effects Ending","Unofficial","Triangle Naming"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Spirit Headband",
+		"category": ["Effects","Effects Ending","Official","Triangle Naming"],
 		"progression": true
 	},
 	{
@@ -128,19 +164,37 @@
 	{
 		"count":1,
 		"name": "Demon",
-		"category": ["Effects","Effects Ending"],
+		"category": ["Effects","Effects Ending","Unofficial","Demon Naming"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Oni",
+		"category": ["Effects","Effects Ending","Official","Demon Naming"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Buyo Buyo",
-		"category": ["Effects","Effects Ending"],
+		"category": ["Effects","Effects Ending","Unofficial","Buyo Naming"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Squish-Squish",
+		"category": ["Effects","Effects Ending","Official","Buyo Naming"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Stoplight",
-		"category": ["Effects","Effects Ending"],
+		"category": ["Effects","Effects Ending","Unofficial","Stoplight Naming"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Traffic Light",
+		"category": ["Effects","Effects Ending","Official","Stoplight Naming"],
 		"progression": true
 	},
 	{

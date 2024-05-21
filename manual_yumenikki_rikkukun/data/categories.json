@@ -5,16 +5,24 @@
     "Effects Ending": {
         "hidden": true
     },
+    "Unofficial": {
+	    "yaml_option": ["unofficial_translations"],
+        "hidden": true
+    },
+    "Official": {
+	    "yaml_option": ["!unofficial_translations"],
+        "hidden": true
+    },
     "Nexus Door Keys": {
         "yaml_option": ["lock_nexus_doors"],
         "hidden": false
     },
     "Events": {
-        "yaml_option": ["eventsanity"],
+        "yaml_option": ["shuffle_events"],
         "hidden": false
     },
     "RNG Events": {
-        "yaml_option": ["event_rngchance_sanity"],
+        "yaml_option": ["shuffle_rng_events"],
         "hidden": true
     },
 	"Vending Machines": {
@@ -33,9 +41,35 @@
 	    "yaml_option": ["!separate_frogs"],
         "hidden": true
 	},
+    "Yuki Onna Naming": {
+        "hidden": true
+    },
+    "Knife Naming": {
+        "hidden": true
+    },
+    "Medamaude Naming": {
+        "hidden": true
+    },
+    "Fat Naming": {
+        "hidden": true
+    },
+    "Nopperabou Naming": {
+        "hidden": true
+    },
+    "Triangle Naming": {
+        "hidden": true
+    },
+    "Demon Naming": {
+        "hidden": true
+    },
+    "Buyo Naming": {
+        "hidden": true
+    },
+    "Stoplight Naming": {
+        "hidden": true
+    },
 	"NPC Kill": {
 	    "yaml_option": ["knifesanity"],
-        "hidden": true,
-	    "requires": "|Knife|"
+        "hidden": true
 	}
 }

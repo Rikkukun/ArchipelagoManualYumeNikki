@@ -14,25 +14,49 @@
 	{
 		"name": "Yuki Onna",
 		"region": "Snow World",
-		"category": ["Effects"],
+		"category": ["Effects","Unofficial"],
+		"requires": []
+	},
+	{
+		"name": "Snow Woman",
+		"region": "Snow World",
+		"category": ["Effects","Official"],
 		"requires": []
 	},
 	{
 		"name": "Knife",
 		"region": "Dark World",
-		"category": ["Effects"],
+		"category": ["Effects","Unofficial"],
+		"requires": []
+	},
+	{
+		"name": "Kitchen Knife",
+		"region": "Dark World",
+		"category": ["Effects","Official"],
 		"requires": []
 	},
 	{
 		"name": "Medamaude",
 		"region": "Eyeball World",
-		"category": ["Effects"],
+		"category": ["Effects","Unofficial"],
+		"requires": []
+	},
+	{
+		"name": "Eye Palm",
+		"region": "Eyeball World",
+		"category": ["Effects","Official"],
 		"requires": []
 	},
 	{
 		"name": "Fat",
 		"region": "Hell",
-		"category": ["Effects"],
+		"category": ["Effects","Unofficial"],
+		"requires": []
+	},
+	{
+		"name": "Fatten",
+		"region": "Hell",
+		"category": ["Effects","Official"],
 		"requires": []
 	},
 	{
@@ -56,7 +80,13 @@
 	{
 		"name": "Nopperabou",
 		"region": "Mural World",
-		"category": ["Effects"],
+		"category": ["Effects","Unofficial"],
+		"requires": []
+	},
+	{
+		"name": "Faceless Ghost",
+		"region": "Mural World",
+		"category": ["Effects","Official"],
 		"requires": []
 	},
 	{
@@ -110,7 +140,13 @@
 	{
 		"name": "Triangle Kerchief",
 		"region": "Wilderness",
-		"category": ["Effects"],
+		"category": ["Effects","Unofficial"],
+		"requires": []
+	},
+	{
+		"name": "Spirit Headband",
+		"region": "Wilderness",
+		"category": ["Effects","Official"],
 		"requires": []
 	},
 	{
@@ -122,19 +158,37 @@
 	{
 		"name": "Demon",
 		"region": "Shield-Folk World",
-		"category": ["Effects"],
+		"category": ["Effects","Unofficial"],
+		"requires": []
+	},
+	{
+		"name": "Oni",
+		"region": "Shield-Folk World",
+		"category": ["Effects","Official"],
 		"requires": []
 	},
 	{
 		"name": "Buyo Buyo",
 		"region": "FC World B",
-		"category": ["Effects"],
+		"category": ["Effects","Unofficial"],
+		"requires": []
+	},
+	{
+		"name": "Squish-Squish",
+		"region": "FC World B",
+		"category": ["Effects","Official"],
 		"requires": []
 	},
 	{
 		"name": "Stoplight",
 		"region": "Puddle World",
-		"category": ["Effects"],
+		"category": ["Effects","Unofficial"],
+		"requires": []
+	},
+	{
+		"name": "Traffic Light",
+		"region": "Puddle World",
+		"category": ["Effects","Official"],
 		"requires": []
 	},
 	{
@@ -202,25 +256,25 @@
 		"name": "Severed Heads in the Sky",
 		"region": "White Desert A",
 		"category": ["Events"],
-		"requires": "|Knife|"
+		"requires": "|@Knife Naming:1|"
 	},
 	{
 		"name": "Thing with the Quivering Jaw",
 		"region": "Puddle World",
 		"category": ["Events"],
-		"requires": "|Knife|"
+		"requires": "|@Knife Naming:1|"
 	},
 	{
 		"name": "Monoe",
 		"region": "White Desert A",
 		"category": ["Events"],
-		"requires": "|Knife|"
+		"requires": "|@Knife Naming:1|"
 	},
 	{
 		"name": "Monoko",
 		"region": "White Desert A",
 		"category": ["Events"],
-		"requires": "|Stoplight|"
+		"requires": "|@Stoplight Naming:1|"
 	},
 	{
 		"name": "Play with Masada",
@@ -229,7 +283,7 @@
 		"requires": []
 	},
 	{
-		"name": "UFO",
+		"name": "UFOs on Mars",
 		"region": "Spaceship",
 		"category": ["Events"],
 		"requires": "|Cat|"
@@ -250,7 +304,7 @@
 		"name": "Ghost Madotsuki",
 		"region": "Numbers World",
 		"category": ["Events"],
-		"requires": "|Knife|"
+		"requires": "|@Knife Naming:1|"
 	},
 	{
 		"name": "Takofuusen",
@@ -292,18 +346,18 @@
 		"name": "Dense Woods Vending Machine",
 		"region": "Puddle World",
 		"category": ["Vending Machines"],
-		"requires": "|Knife|"
+		"requires": "|@Knife Naming:1|"
 	},
 	{
 		"name": "Hell Vending Machine",
 		"region": "Hell",
 		"category": ["Vending Machines"],
-		"requires": "|Knife|"
+		"requires": "|@Knife Naming:1|"
 	},
 	{
 		"name": "Docks Vending Machine",
 		"region": "Mural World",
 		"category": ["Vending Machines"],
-		"requires": "|Knife|"
+		"requires": "|@Knife Naming:1|"
 	}
 ]

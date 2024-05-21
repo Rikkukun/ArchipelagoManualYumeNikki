@@ -126,22 +126,22 @@ Manual_YumeNikki_Rikkukun:
     # Gives custom logic requirements to certain Effects that otherwise don't have any utility:
     # - Towel is required to access the Stairway of Hands by interacting with the beds in the dream world (Towel resembles a bed sheet)
     # - Frog is required to access Pink Sea (Based on the Frog's property of giving 2x speed in water)
-    # - Demon is required to use the shortcut from FC World to FC House by talking to RNG Demon (100% chance to spawn with Demon equipped)
     # - Flute is required to get an item from Masada by playing next to him
-    # - Nopperabou
-    # - Triangle
-    # - Poop Hair
+    # - Demon is required to use the shortcut from FC World to FC House by talking to RNG Demon (100% chance to spawn with Demon equipped)
+    # - Nopperabou is required to interact with the Pirori to get from Docks to Wilderness and from Barracks Settlement to FC World (Pirori have no face like Nopperabou)
+    # - Triangle Kerchief is required to get the item from Ghost Madotsuki
+    # - Poop Hair is required to access Restrooms
     false: 50
     true: 0
 
-  eventsanity:
+  shuffle_events:
     # You get items from seeing certain events in Yume Nikki
     # Events which require RNG are excluded
     # You have to turn this on to make the option Lock Nexus Doors work (otherwise there won't be enough available locations to place Nexus Keys)
     false: 0
     true: 50
 
-  event_rngchance_sanity:
+  shuffle_rng_events:
     # You get items from seeing certain events which require lucky RNG (Uboa, FACE, Falling Man, Takofuusen, FC Glitch, Melting Madotsuki)
     # Activate this at your own risk
     false: 50
@@ -163,6 +163,13 @@ Manual_YumeNikki_Rikkukun:
     # There are two locations where you can obtain the Frog effect: Forest World and Dense Woods
     # No: you obtain a single item from any of the two locations
     # Yes: you obtain an item from each of the two locations
+    false: 0
+    true: 50
+
+  unofficial_translations:
+    # Choose which english translation to use for the effects naming
+    # Yes: use unofficial translations from UboaChan (Medamaude, Yuki Onna, Buyo Buyo...)
+    # No: use official translations from the Steam release (Eye Palm, Snow Woman, Squish-Squish...)
     false: 0
     true: 50
 

@@ -62,37 +62,43 @@ class FunEffects(Toggle):
     - Frog is required to access Pink Sea (Based on the Frog's property of giving 2x speed in water)
     - Flute is required to get an item from Masada by playing next to him
     - Demon is required to use the shortcut from FC World to FC House by talking to RNG Demon (100% chance to spawn with Demon equipped)
-    - Nopperabou is required to access FC World by interacting with the Pirori in the Ghost Town (Pirori have no face like Nopperabou)
+    - Nopperabou is required to interact with the Pirori to get from Docks to Wilderness and from Barracks Settlement to FC World (Pirori have no face like Nopperabou)
     - Triangle Kerchief is required to get the item from Ghost Madotsuki
     - Poop Hair is required to access Restrooms"""
     display_name = "Fun Effects Mode"
 
-class Eventsanity(DefaultOnToggle):
+class ShuffleEvents(DefaultOnToggle):
     """You get items from seeing certain events in Yume Nikki
     Events which require RNG are excluded
     You have to turn this on to make the option Lock Nexus Doors work (otherwise there won't be enough available locations to place Nexus Keys)"""
-    display_name = "Eventsanity"
+    display_name = "Shuffle Events"
     
-class EventsanityRng(Toggle):
+class ShuffleRNGEvents(Toggle):
     """You get items from seeing certain events which require lucky RNG (Uboa, FACE, Falling Man, Takofuusen, FC Glitch, Melting Madotsuki)
     Activate this at your own risk"""
-    display_name = "Eventsanity RNG"
+    display_name = "Shuffle RNG Events"
     
 class ShuffleVendingMachines(Toggle):
     """You get an item for making a purchase at the three Vending Machines
     Knife is expected in logic in order to obtain money"""
-    display_name = "Vending Machines Sanity"
+    display_name = "Shuffle Vending Machines"
 
 class ShuffleRestrooms(Toggle):
     """You get an item from the two Restrooms in Graffiti World and Block World
     In Fun Effects Mode you need Poop Hair to get these two items"""
-    display_name = "Vending Machines Sanity"
+    display_name = "Shuffle Restrooms"
     
 class SeparateFrogs(DefaultOnToggle):
     """There are two locations where you can obtain the Frog effect: Forest World and Dense Woods
     No: you obtain a single item from any of the two locations
     Yes: you obtain an item from each of the two locations"""
     display_name = "Separate Frogs"
+
+class UnofficialTranslations(DefaultOnToggle):
+    """Choose which english translation to use for the effects naming
+    Yes: use unofficial translations from UboaChan (Medamaude, Yuki Onna, Buyo Buyo...)
+    No: use official translations from the Steam release (Eye Palm, Snow Woman, Squish-Squish...)"""
+    display_name = "Unofficial Translations"
     
 class Knifesanity(Toggle):
     """NOT YET IMPLEMENTED"""
@@ -104,11 +110,12 @@ def before_options_defined(options: dict) -> dict:
     options["logic_difficulty"] = LogicDifficulty
     options["lock_nexus_doors"] = LockNexusDoors
     options["fun_effects_mode"] = FunEffects
-    options["eventsanity"] = Eventsanity
-    options["event_rngchance_sanity"] = EventsanityRng
+    options["shuffle_events"] = ShuffleEvents
+    options["shuffle_rng_events"] = ShuffleRNGEvents
     options["shuffle_vending_machines"] = ShuffleVendingMachines
     options["shuffle_restrooms"] = ShuffleRestrooms
     options["separate_frogs"] = SeparateFrogs
+    options["unofficial_translations"] = UnofficialTranslations
     options["knifesanity"] = Knifesanity
     return options
 
