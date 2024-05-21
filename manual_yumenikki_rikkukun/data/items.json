@@ -39,7 +39,7 @@
 		"count":1,
 		"name": "Fat",
 		"category": ["Effects","Effects Ending"],
-		"progression_skip_balancing": true
+		"progression": true
 	},
 	{
 		"count":1,
@@ -57,19 +57,19 @@
 		"count":1,
 		"name": "Neon",
 		"category": ["Effects","Effects Ending"],
-		"progression_skip_balancing": true
+		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Nopperabou",
 		"category": ["Effects","Effects Ending"],
-		"progression_skip_balancing": true
+		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Severed Head",
 		"category": ["Effects","Effects Ending"],
-		"progression_skip_balancing": true
+		"progression": true
 	},
 	{
 		"count":1,
@@ -81,7 +81,7 @@
 		"count":1,
 		"name": "Cat",
 		"category": ["Effects","Effects Ending"],
-		"progression_skip_balancing": true
+		"progression": true
 	},
 	{
 		"count":1,
@@ -99,25 +99,25 @@
 		"count":1,
 		"name": "Long Hair",
 		"category": ["Effects","Effects Ending"],
-		"progression_skip_balancing": true
+		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Poop Hair",
 		"category": ["Effects","Effects Ending"],
-		"progression_skip_balancing": true
+		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Blonde Hair",
 		"category": ["Effects","Effects Ending"],
-		"progression_skip_balancing": true
+		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Triangle Kerchief",
 		"category": ["Effects","Effects Ending"],
-		"progression_skip_balancing": true
+		"progression": true
 	},
 	{
 		"count":1,
@@ -129,13 +129,13 @@
 		"count":1,
 		"name": "Demon",
 		"category": ["Effects","Effects Ending"],
-		"progression_skip_balancing": true
+		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Buyo Buyo",
 		"category": ["Effects","Effects Ending"],
-		"progression_skip_balancing": true
+		"progression": true
 	},
 	{
 		"count":1,
