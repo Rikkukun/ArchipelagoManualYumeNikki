@@ -87,6 +87,10 @@ def add_region_rule(region, item: str, player):
     for entrance in region.entrances:
         add_rule(entrance, lambda state: state.has(item, player))
 
+def add_region_rule_count(region, item: str, number: int, player):
+    for entrance in region.entrances:
+        add_rule(entrance, lambda state: state.count_group(item, player) >= number)
+
 # Called before rules for accessing regions and locations are created. Not clear why you'd want this, but it's here.
 def before_set_rules(world: World, multiworld: MultiWorld, player: int):
     pass
@@ -116,18 +120,18 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                 case "Stairway of Hands":
                     add_region_rule(region, "Towel", player)
                 case "FC World to FC House Connector":
-                    add_region_rule(region, "Demon", player)
+                    add_region_rule_count(region, "Demon Naming", 1, player)
                 case "FC World B":
-                    add_region_rule(region, "Nopperabou", player)
+                    add_region_rule_count(region, "Nopperabou Naming", 1, player)
                 case "Hell to Wilderness Connector":
-                    add_region_rule(region, "Nopperabou", player)
+                    add_region_rule_count(region, "Nopperabou Naming", 1, player)
                     
         for location in multiworld.get_locations(player):
             match location.name:
                 case "Play with Masada":
                     set_rule(location, lambda state: state.has("Flute", player))
                 case "Ghost Madotsuki":
-                    set_rule(location, lambda state: state.count_group("Triangle Naming", player) == 1)
+                    add_rule(location, lambda state: state.count_group("Triangle Naming", player) >= 1)
                 case "Block World Restroom":
                     set_rule(location, lambda state: state.has("Poop Hair", player))
                 case "Graffiti World Restroom":
@@ -150,7 +154,7 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
                         add_region_rule(region, "Snow World Key", player)
                         add_region_rule(region, "Number World Key", player)
                         add_region_rule(region, "Candle World Key", player)
-                        add_region_rule(region, "Block World Key", player)
+                        add_region_rule(region, "Block World Key", player) # This is not 100% correct, you can reach Block World from other areas in Easy Logic
 
     # No Logic
     if logic_difficulty == 2:
