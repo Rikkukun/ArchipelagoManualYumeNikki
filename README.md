@@ -7,6 +7,7 @@ You can download the game for free [here](https://store.steampowered.com/app/650
 It is highly advised to use a save file with all the 24 effects already obtained. If you want to go even further you can use a save file with all the effects dropped on the ground in the Nexus as eggs, and picking them up as you receive them from the multiworld.
 
 
+
 # How this works
 
 With the most basic yaml settings: the 24 effects and Instructions are shuffled in the item pool.
@@ -14,7 +15,9 @@ With the most basic yaml settings: the 24 effects and Instructions are shuffled 
 The goal is reaching the ending after having obtained the 24 effects from the multiworld.
 
 
+
 # Yaml Options
+
 
 ## Effects Required for Ending
 
@@ -95,10 +98,10 @@ A completely custom setting that gives utility to certain effects that otherwise
 - **Frog** is required to access Pink Sea (Based on the Frog's property of giving 2x speed in water)
 - **Towel** is required to access the Stairway of Hands by interacting with the beds in the dream world (Based on Towel's resemblance to a bed sheet)
 - **Demon** is required to use the shortcut from FC World to FC House by talking to RNG Demon (Based on Demon's property of making RNG Demon spawn with 100% chance)
-- **Flute** is required to get the check Play with Masada
+- **Flute** is required to get the item from Play with Masada
 - **Nopperabou** is required to interact with the Pirori to get from Docks to Wilderness and from Barracks Settlement to FC World (Pirori have no face like Nopperabou)
-- **Triangle Kerchief** is required to get the check Ghost Madotsuki
-- **Poop Hair** is required to access Restrooms"""
+- **Triangle Kerchief** is required to get the item from Ghost Madotsuki
+- **Poop Hair** is required to access Restrooms
 
 
 ## Logic Difficulty
@@ -117,7 +120,8 @@ Yume Nikki has a huge map and some entrances which, by a gameplay standpoint, ar
 
 - Unofficial translations from UboaChan (Medamaude, Yuki Onna, Buyo Buyo, Knife, Fat, Nopperabou, Triangle Kerchief, Demon, Stoplight)
 
-- Official translations from the Steam release (Eye Palm, Snow Woman, Squish-Squish, Kitchen Knife, Fatten, Faceless Ghost, Spirit Headband, Oni, Traffic Light)"""
+- Official translations from the Steam release (Eye Palm, Snow Woman, Squish-Squish, Kitchen Knife, Fatten, Faceless Ghost, Spirit Headband, Oni, Traffic Light)
+
 
 
 # Miscellaneous Info
@@ -131,6 +135,7 @@ Instructions is an item you start with in the original game. This is replaced by
 Filler locations are 100 Yen. They are currently not considered in the Vending Machines' logic. I will rethink about this when implementing Knifesanity.
 
 Knifesanity/Killsanity is yaml setting not yet implemented which adds a location for every NPC you can kill in the game. This is a meme idea and I don't spur anyone with a sane mind to play it due to the big amount of locations and filler items it adds.
+
 
 
 # Thanks to
