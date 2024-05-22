@@ -130,7 +130,7 @@ The canonical Yume Nikki Ending can be viewed as this game's Triforce Hunt since
 
 Instructions is considered a useful "Effect" item but it's not counted in the total amount of effects you need to reach the Ending.
 
-Instructions is an item you start with in the original game. This is replaced by the starting Nexus Key if Lock Nexus Doors is on and with a random item otherwise.
+Instructions is an item you start with in the original game. This is replaced by the starting Nexus Key if Lock Nexus Doors is on.
 
 Filler locations are 100 Yen. They are currently not considered in the Vending Machines' logic. I will rethink about this when implementing Knifesanity.
 
@@ -143,5 +143,6 @@ Knifesanity/Killsanity is yaml setting not yet implemented which adds a location
 - vgperson for creating a working standalone Yume Nikki randomizer from which I took some clever ideas
 - SpearOfLies for helping with logic and testing
 - Fajacopo for some ideas for Fun Effects Mode
+- Everyone in the Manual AP Discord server who helped me with the more technical stuff
 - Kikiyama for making Yume Nikki
 - and you :)
