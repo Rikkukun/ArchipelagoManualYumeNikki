@@ -32,31 +32,31 @@ Find the respective Keys to access the worlds.
 
 If this setting is active you will always start with a random Nexus Key.
 
-This setting only adds items to the multiworld but zero locations, so in order to not break generation you need to shuffle at least events when playing with this option.
+> [!NOTE]
+> This setting only adds items to the multiworld but zero locations, so in order to not break generation you need at least to activate Shuffle Events when playing with this option.
 
 
 ## Shuffle Events
 
-This setting shuffles various Yume Nikki events in the item pool, listed below.
+This setting adds various Yume Nikki events in the locations pool, listed below.
 
 - **Toriningen Party**
 - **Witch's Flight**
 - **Monoe**
 - **Monoko**
 - **Mars-san**
-- **Play with Masada** (More on this in the Fun Effects Mode setting)
 - **UFOs on Mars**
 - **Rave Aztec Monkey**
 - **Closet Madotsuki**
-- **Ghost Madotsuki** (More on this in the Fun Effects Mode setting)
 - **Severed Heads in the Sky**
 - **Thing with the Quivering Jaw**
 - **FC Goblins**
-
+- **Play with Masada** (More on this in the Fun Effects Mode setting)
+- **Ghost Madotsuki** (More on this in the Fun Effects Mode setting)
 
 ## Shuffle RNG Events
 
-This shuffles more events in the item pool which require luck or good RNG, listed below.
+This shuffles more events in the locations pool which require luck or good RNG, listed below.
 
 Activate at your own risk.
 
@@ -98,10 +98,10 @@ A completely custom setting that gives utility to certain effects that otherwise
 - **Frog** is required to access Pink Sea (Based on the Frog's property of giving 2x speed in water)
 - **Towel** is required to access the Stairway of Hands by interacting with the beds in the dream world (Based on Towel's resemblance to a bed sheet)
 - **Demon** is required to use the shortcut from FC World to FC House by talking to RNG Demon (Based on Demon's property of making RNG Demon spawn with 100% chance)
-- **Flute** is required to get the item from Play with Masada
 - **Nopperabou** is required to interact with the Pirori to get from Docks to Wilderness and from Barracks Settlement to FC World (Pirori have no face like Nopperabou)
-- **Triangle Kerchief** is required to get the item from Ghost Madotsuki
 - **Poop Hair** is required to access Restrooms
+- **Flute** is required to get the item from Play with Masada
+- **Triangle Kerchief** is required to get the item from Ghost Madotsuki
 
 
 ## Logic Difficulty
@@ -113,7 +113,7 @@ Yume Nikki has a huge map and some entrances which, by a gameplay standpoint, ar
 	- You are not expected to traverse Hell/Red Maze to reach Forest, Eyeball, Neon and Candle World. You are still expected to reach Docks and Witch Island through Hell though since it's the only way
 	- Lamp effect is required in all the dark rooms
 - **Mean logic**: all the above preventions are ignored;
-- **No Logic**: ignores all logic and seeds could easily be unbeatable. Don't know why you would play this in Archipelago but it's available
+- **No logic**: ignores all logic and seeds could easily be unbeatable. Don't know why you would play this in Archipelago but it's available
 
 
 ## Choose Effects Translation
